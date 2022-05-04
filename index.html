@@ -1,14 +1,885 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Python教學, 網頁教學, 物聯網教學, 人工智慧教學">
+    <meta name="author" content="Victor Gau">
+
+    <title>唯客學院</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- load fontawesome fonts-->
+    <script src="https://kit.fontawesome.com/b1f941bb4c.js" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142795604-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142795604-1');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-85D51K0RHJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-85D51K0RHJ');
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3914607163427066"
-     crossorigin="anonymous"></script>
-</head>
-<body>
-    Victor is saying hello to you!
-</body>
+    crossorigin="anonymous"></script>
+
+    <!-- 自定義的 style -->
+    <style>
+        #header {
+            background-image: url('img/header.jpg');
+            width: auto;
+            height: 100%;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+    </style>
+  </head>
+
+  <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="10">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: rgba(0, 0, 0, 0.9);">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">唯客學院</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="navbar-nav ms-auto">
+              <a class="nav-item nav-link" href="#about">關於我們</a>
+              <a class="nav-item nav-link" href="#services">服務</a>
+              <a class="nav-item nav-link" href="#courses">課程列表</a>
+              <a class="nav-item nav-link" href="#register">註冊上課</a>
+              <a class="nav-item nav-link" href="#feedbacks">學員見證</a>
+              <a class="nav-item nav-link" href="#FAQ">常見問題</a>
+              <a class="nav-item nav-link" href="#contact">聯絡我們</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center text-white d-flex vh-100 bg-dark" id="header">
+      <div class="container my-auto">
+        <div class="row my-5">
+          <div class="col-lg-10 mx-auto">
+            <span class="text-uppercase display-3">
+              <strong>程式設計即刻上手</strong>
+            </span>
+            <hr class="border-top border-light w-25 mx-auto my-4">
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">參加唯客學院的課程，迅速掌握實現抽象產品構想的技術能力，成為各行各業程式設計的即戰力！</p>
+            <a class="btn btn-danger shadow" href="#courses">瀏覽課程</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-danger bg-gradient py-5" id="about">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="text-white">關於我們</h2>
+            <hr class="border-top border-light w-25 mx-auto my-4">
+            <p class="text-light text-start mb-4">
+                唯客學院的前身叫做高雄Python學院！但是因為教學內容已經包含Python以外的課程，所以將名稱上的Python去掉改為唯客學院，唯客(Vic)是創辦人Victor的暱稱。
+            </p>
+            <p class="text-light text-start mb-4">
+                在當前這個時代的產品或服務大致上必須具備行動化(Mobilized)、網路化(Connected)、自動化(Automated)、智慧化(Intelligent)等等的特性，而且開發的時程要越短越好。在我們的課程中，我們希望用最淺顯易懂的方式，讓大家可以迅速的使用人工智慧、金融科技、物聯網、資料分析等技術，開發出具備行動化、網路化、自動化、智慧化等功能的產品或服務的MVP。
+            </p>
+            <p class="text-light text-start mb-4">
+                在新冠肺炎期間，我們會全面翻新我們的課程，如果您覺得這個課程對您有幫助，記得要幫忙推薦給您的朋友喔！感謝您！
+            </p>
+            <hr class="border-top border-light w-25 mx-auto my-4">
+            <a class="btn btn-light text-danger shadow" href="#courses">課程列表</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white bg-gradient py-5" id="services">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-danger">我們的服務</h2>
+            <hr class="border-top border-danger w-25 mx-auto my-4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5 mx-auto">
+              <a class="text-danger text-decoration-none" href="https://khpy.teachable.com/p/simple-python-applications"><i class="fa fa-4x fa-video-camera mb-3 sr-icons"></i>
+              <h3 class="mb-3">免費教學</h3>
+              <p class="text-muted mb-0">持續更新數門免費影音教學課程。</p></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5 mx-auto">
+              <a class="text-danger text-decoration-none" href="#courses"><i class="fa fa-4x fa-users mb-3 sr-icons"></i>
+              <h3 class="mb-3">線上課程</h3>
+              <p class="text-muted mb-0">針對企業及個人的需求仔細規劃的線上課程！</p></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5 mx-auto">
+              <a class="text-danger text-decoration-none" class="nav-link" href="https://www.facebook.com/KHPYAcademy/"><i class="fa fa-4x fa-bank mb-3 sr-icons"></i>
+              <h3 class="mb-3">實體課程</h3>
+              <p class="text-muted mb-0">不定期於粉絲專頁更新實體課程訊息！</p></a>
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5 mx-auto">
+                <a class="text-danger text-decoration-none" href="https://github.com/victorgau/khpy_hr_intro"><i class="fa fa-4x fa-diamond mb-3 sr-icons"></i>
+                <h3 class="mb-3">企業內外訓</h3>
+                <p class="text-muted mb-0">針對企業需求，提供主題式教學。</p></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light bg-gradient py-5" id="courses">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="text-dark">課程列表</h2>
+            <hr class="border-top border-dark w-25 mx-auto my-4">
+            <p class="text-dark text-start">
+              我們的課程大致上都分成三個部分：<span class="badge bg-dark text-white">1. 文件導覽</span> (告訴您哪裡有答案)、<span class="badge bg-primary text-white">2. 實作引導</span> (帶著您做做看)、<span class="badge bg-danger text-white">3. 自我挑戰</span> (讓您自己做做看)。
+              我們希望可以讓大家用最符合經濟效益的方式，學習具備自己找線索、自己動手做、最後靠自己解決問題的能力。
+            </p>
+            <a class="btn btn-success text-white shadow" href="#register">註冊上課</a>
+            <hr class="border-top border-dark w-25 mx-auto my-4">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_python_beginners">Python初步 <span class="badge bg-danger"><i class="fa fa-heart text-white"> 免費</i></span></a></h5>
+                    <p class="card-text text-primary">
+                        先別管環境安裝了，讓我們直接開始動手寫程式吧！
+                        先了解一下 Python 大概的寫法，再來思考要不要安裝環境吧！
+                        不要讓搞不定環境的挫敗感覺影響了您的學習！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://khpy.teachable.com/p/simple-python-applications">Python快速入門 <span class="badge bg-danger"><i class="fa fa-heart text-white"> 免費</i></span></a></h5>
+                    <p class="card-text text-primary">
+                      對於 Python 這個語言，初學者只要熟練基本資料型態、基本容器型別、及基本的語法，再搭配模組跟套件，就可以解決大部分的問題。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_python_basics">Python基礎 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-primary">
+                        在這個課程裡面，我們進一步說明基本資料型態、基本容器型別、和基本語法的使用。內容會含括：字串格式化、檔案IO、編碼解碼(Unicode使用)、comprehension等等主題。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-warning mb-3 shadow">
+                  <div class="card-header bg-warning bg-gradient text-dark">
+                      <i class="fa fa-tools"></i> 開發工具
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">
+                      <a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_vsc_intro">VS Code簡介 <span class="badge bg-danger"><i class="fa fa-play text-light"> </i></span></a></h5>
+                    <p class="card-text text-dark">
+                        Visual Studio Code 是微軟開發的整合性開發工具，在我們的課程中，它會很常被用來開發網頁及Python程式。
+                        在這個課程中，我們會帶大家了解在VSC中我們最常用的一些功能！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-dark mb-3 shadow">
+                  <div class="card-header bg-dark bg-gradient text-white">
+                      <i class="fa fa-globe"></i> 網頁概念
+                  </div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">
+                      <a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_web_intro">Web簡介 <span class="badge bg-danger"><i class="fa fa-play text-light"> </i></span></a>
+                    </h5>
+                    <p class="card-text text-dark">
+                        簡單說明一下Web的概念，網頁的組成，HTML, CSS, Javascript做什麼用的？HTTP傳輸協定如何運作？最後實際做個網頁試試看！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_web_crawler_intro">網路爬蟲簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text">
+                        說明如何使用 requests 來下載資料、用 BeautifulSoup 來剖析資料、用 Selenium 來自動化網頁存取，並說明資料抓下來之後怎麼進一步做處理。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-robot"></i> 自然語言處理
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_nltk_intro">NLTK簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        NLTK是老牌的自然語言處理的套件，在這個課程中我們會簡單的說明一下NLTK怎麼使用，並使用它來做個簡單的分類文章難易程度的小專案！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-dark mb-3 shadow">
+                  <div class="card-header bg-dark bg-gradient text-white">
+                      <i class="fa fa-globe"></i> 網頁框架
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">
+                      <a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_bootstrap_intro">Bootstrap簡介 <span class="badge bg-dark"><i class="fa fa-video text-light"> 錄製中</i></span></a>
+                    </h5>
+                    <p class="card-text text-dark">
+                        在這個課程中，我們會教您怎麼做出您現在正在看的這個網頁！在了解了Bootstrap的核心觀念後，您會發現製作響應式的網頁原來是如此的簡單！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-danger mb-3 shadow">
+                  <div class="card-header bg-danger bg-gradient text-white">
+                      <i class="fa fa-mobile"></i> 訊息傳遞
+                  </div>
+                  <div class="card-body text-danger">
+                    <h5 class="card-title"><a class="text-danger text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_linenotify_intro">Line Notify簡介 <span class="badge bg-danger"><i class="fa fa-play text-light"> </i></span></a></h5>
+                    <p class="card-text">
+                        模組都幫大家寫好了，載入就可以使用了！立馬傳送訊息跟圖片到自己的Line上面吧！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-danger mb-3 shadow">
+                  <div class="card-header bg-danger bg-gradient text-white">
+                      <i class="fa fa-mobile"></i> 訊息傳遞
+                  </div>
+                  <div class="card-body text-danger">
+                    <h5 class="card-title"><a class="text-danger text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_linebot_intro">Line Bot簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text">
+                        如果要寫一個可以接收使用者訊息、分析訊息、再回傳給使用者的機器人，來上這門課就對了。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-danger mb-3 shadow">
+                  <div class="card-header bg-danger bg-gradient text-white">
+                      <i class="fa fa-mobile"></i> 訊息傳遞
+                  </div>
+                  <div class="card-body text-danger">
+                    <h5 class="card-title"><a class="text-danger text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_telegrambot_intro">Telegram Bot簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text">
+                        Telegram是Line之外的另外一個通訊軟體的選擇，撰寫Telegram Bot的同時，可以練習怎麼使用requests來呼叫API喔！一次性的把好幾個知識點的使用串在一起！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-info mb-3 shadow">
+                  <div class="card-header bg-info bg-gradient text-dark">
+                      <i class="fa fa-microchip"></i> 物聯網
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_rpi_intro">Raspberry Pi簡介 <span class="badge bg-danger"><i class="fa fa-play text-light"> </i></span></a>
+                    </h5>
+                    <p class="card-text text-dark">
+                        簡單的介紹RPi如何使用？如何在沒有鍵盤跟螢幕的狀況下連線使用RPi？如何做遠端開發？最後，我們會做一個使用溫溼度感測器收集資料，透過MQTT將資料送給主控台的小專案。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-warning mb-3 shadow">
+                  <div class="card-header bg-warning bg-gradient text-dark">
+                      <i class="fa fa-tools"></i> 開發工具
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title"><a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_colab_intro">Colab簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"></i></span></a></h5>
+                    <p class="card-text text-dark">
+                        Colab是可以用來協作開發Python的一個很好用的雲端Notebook！Colab的資料會被存到Google Drive中，之後可以很容易查詢自己的學習歷程，Colab也可以將使用者的程式推送到GitHub上面。這麼酷的東西，一定要會用喔！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-robot"></i> 自然語言處理
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_spacy_intro">spaCy簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        這是比NLTK新很多的自然語言處理套件，最新的V3版本中加入了BERT跟許多機器學習的東西。但是我們的課程只會涵蓋簡單的使用的部分，不會使用V3最新的功能。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-warning mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-light">
+                      <i class="fa fa-pie-chart"></i> 資料視覺化
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title"><a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_streamlit_intro">Streamlit簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-dark">
+                        Streamlit是可以讓使用者迅速建立並佈署自己的APP的框架，可以容易的將資料做互動的視覺化呈現，提升團隊溝通的效率，是不可不學得好用工具啊！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-dark mb-3 shadow">
+                  <div class="card-header bg-dark bg-gradient text-white">
+                      <i class="fa fa-globe"></i> 美工設計
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title"><a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_canva_intro">canva簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-dark">
+                        Canva是一款美工設計工具，它提供了無數的樣板、Icon、圖片等，讓缺乏設計天賦的朋友們可以迅速兜出專業的作品，是初學者不可不學的工具。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-warning mb-3 shadow">
+                  <div class="card-header bg-warning bg-gradient text-dark">
+                      <i class="fa fa-tools"></i> 版本管理工具
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title"><a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_git_intro">git簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-dark">
+                        git是軟體工程師必備的版本管理工具，初學者只要知道怎麼clone專案下來，怎麼commit檔案，並將檔案推到遠端的Server上，這樣就可以把這個工具用得嚇嚇叫了！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-robot"></i> 電腦視覺
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_opencv_intro">OpenCV簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        在這個課程中，我們會教大家如何使用OpenCV來讀寫圖形檔、分析圖形檔、並使用它來做人臉偵測、物件辨識等。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-robot"></i> 機器學習
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_sklearn_intro">Scikit-Learn簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-success">
+                        Scikit-Learn的使用大致上有四個步驟：載入模型、建立模型、訓練模型、使用模型。我們會各舉一個監督式學習、非監督式學習、維度縮減的例子，讓大家迅速熟悉這個套件。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-robot"></i> 深度學習
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_keras_intro">Keras簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        Keras是最User-Friendly的深度學習套件！在這個課程中，我們會教大家使用Keras的Sequential API迅速建立模型，並說明及實作CNN、RNN等深度學習模型。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      </i> <i class="fa fa-map"></i> 地圖繪製
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_folium_intro">Folium簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-success">
+                        Folium是Python中最常被用來畫地圖的套件，在它的官網上有詳細的快速入門的教學，在使用上非常的簡單。在這個教學中，我們會舉一些實際的範例來說明Folium的使用方式。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-image"></i> 影像處理
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_pillow_intro">Pillow簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        Pillow是Python中最常被用來做簡單圖形處理的套件，如果您只是要做簡單的圖形縮放、旋轉、合併等動作，就先用它試試看吧！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-pie-chart"></i> 資料視覺化
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_seaborn_intro">Seaborn簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        Seaborn是Python的一個繪圖套件，是基於MatPlotLib的美化版，可以迅速畫出漂亮的圖形，利用資料視覺化替自己的資料大大的加分。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-flask"></i> 網頁框架
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_flask_intro">Flask簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-success">
+                        Flask是Python的輕量級網頁框架，可以迅速作出簡易的網頁。搭配Jinja2模板引擎，可以很容易的在模板中插入資料，即便做網頁的功力不好，也可以很容易的用Flask做出有趣的服務喔！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-pie-chart"></i> 資料視覺化
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_plotly_intro">Plotly簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-white"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-success">
+                        Plotly可以很容易的做出網頁互動圖形，搭配Python的cufflinks套件，可以讓Pandas很容易的畫出互動式的圖形，很好用喔！趕快來學習吧！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-success mb-3 shadow">
+                  <div class="card-header bg-success bg-gradient text-white">
+                      <i class="fa fa-pie-chart"></i> 資料視覺化
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title"><a class="text-success text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_bokeh_intro">Bokeh簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"></i></span></a></h5>
+                    <p class="card-text text-success">
+                        Bokeh是除了Plotly之外，最容易用來繪製網頁互動圖形的Python套件了。您如果覺得Plotly好用，一定也要順便學一下Bokeh，好好比較一下兩者的異同喔！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_pandas_intro">Pandas簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-primary">
+                        Pandas是用Python做資料分析最基礎的套件，簡單又好用，如果要使用Python來做資料分析，這個套件是必學的！趕快來上課吧！
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_data_analysis_intro">資料分析簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-primary">
+                        本課程主要在簡單的說明如何使用Python的三個資料分析的基礎套件：numpy, matplotlib, pandas。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_quant_intro">量化投資簡介 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-primary">
+                        學習如何讀取公司基本資料、股價歷史資料、財報資料等等，並設定條件，讓程式自動幫我們找出符合條件的股票。
+                    </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-primary mb-3 shadow">
+                  <div class="card-header bg-primary bg-gradient text-white">
+                      <i class="fa fa-code"></i> 程式設計
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a class="text-primary text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_marketing_analytics_intro">市場資料分析 <span class="badge bg-danger"><i class="fa fa-play text-white"> </i></span></a></h5>
+                    <p class="card-text text-primary">
+                        簡單說明RFM分析、推薦引擎、關聯規則分析、客戶終身價值 (Customer LifeTime Value) 的計算及使用等。
+                    </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-dark mb-3 shadow">
+                  <div class="card-header bg-dark bg-gradient text-white">
+                      <i class="fa fa-globe"></i> 網頁佈署
+                  </div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">
+                      <a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/deploying_flask">Flask佈署 <span class="badge bg-danger"><i class="fa fa-play text-light"> </i></span></a>
+                    </h5>
+                    <p class="card-text text-dark">
+                        簡單說明如何將Flask App佈署到Heroku上面。使用者需要註冊Heroku、建立虛擬環境、安裝及使用git等，對初學者來說是一個不錯的練習。
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card h-100 border-warning mb-3 shadow">
+                  <div class="card-header bg-warning bg-gradient text-dark">
+                      <i class="fa fa-tools"></i> 自動工具
+                  </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">
+                      <a class="text-dark text-decoration-none stretched-link" href="https://github.com/victorgau/khpy_auto_intro">自動排程簡介 <span class="badge bg-danger"><i class="fa fa-wrench text-light"> 規劃中</i></span></a></h5>
+                    <p class="card-text text-dark">
+                        簡單介紹一下在電腦上面怎麼做自動化排程！在Windows上面最簡單的方式，應該就是使用工作排程器(Task Scheduler)了，在Linux/Mac上面，大概就是crontab囉！
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-info bg-graident py-5"  id="register">
+      <div class="container text-center my-5">
+        <h2 class="mb-4">註冊上課</h2>
+        <hr class="border-top border-dark w-25 mx-auto my-4">
+        <div class="row justify-content-center">
+          
+          <div class="col-lg-4 col-sm-6 my-3">
+            <div class="card h-100 mx-3 shadow">
+              <a href="#register"><img class="card-img-top" src="img/emma-dau-n_4iTY1KmDE-unsplash.jpg" alt="Python基礎課程"></a>
+              <div class="card-body">
+                <h4 class="card-title mb-4">
+                  <a class="text-success text-decoration-none" href="https://khpy.teachable.com" target="_blank">
+                    <i class="fa fa-dollar-sign"></i> 即時課程 <i class="fa fa-dollar-sign"></i>
+                </a>
+                </h4>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 上課時間於Line社群上討論
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 有影音教學可以預習
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 有課程錄影可以複習
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 可提出需求酌情客製化上課範例
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 線上教學，國內外皆可參加
+                </p>
+                <p class="card-text"><del>NT$500/hr</del> NT$399/hr</p>
+              </div>
+              <div class="card-footer">
+                <!-- <a class="btn btn-success" href="https://p.ecpay.com.tw/E070BCA">報名繳費</a> -->
+                <a class="btn btn-success" href="https://p.ecpay.com.tw/FE6708F">報名繳費</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 my-3">
+            <div class="card h-100 mx-3 shadow">
+              <a href="#register"><img class="card-img-top" src="img/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="Python基礎課程"></a>
+              <div class="card-body">
+                <h4 class="card-title mb-4">
+                  <a class="text-danger text-decoration-none" href="https://khpy.teachable.com" target="_blank">
+                    <i class="fa fa-heart"></i> 影音課程 <i class="fa fa-heart"></i>
+                </a>
+                </h4>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 註冊繳費後即可開始學習
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 影片觀看時限三個月
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 一個月內不滿意可退款機制
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 會組織社群共同學習成長
+                </p>
+                <p class="card-text text-start">
+                    <i class="fa fa-tag"></i> 每個禮拜會排定回答問題的時間
+                </p>
+                <p class="card-text"><del>NT$4800</del> NT$3000/三個月</p>
+              </div>
+              <div class="card-footer">
+                <!-- <a class="btn btn-danger" href="https://p.ecpay.com.tw/8390DA4">報名繳費</a> -->
+                <a class="btn btn-danger" href="https://p.ecpay.com.tw/4082EFA">報名繳費</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light bg-gradient py-5" id="feedbacks">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h2 class="text-dark">學員見證</h2>
+              <hr class="border-top border-dark w-25 mx-auto my-4">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"這門線上課程除了具有一般線上課程優點: 可以反覆觀看外, 最重要的是有一位課輔老師。老師真的很有耐心且耐操, 針對一個問題會反反覆覆鉅細靡遺的說明, 而且不用術語而是用講故事的口吻說給你聽, 或是用影片幫你從基礎打底告訴你. 這門課我除了學到爬蟲的相關知識外, 還學到版本控制，怎麼用 chrome dev tool 看訊息的傳輸資訊. 從client 到server 端 整體的概念都涵蓋了...電腦概論居然都可以在這裡打底. ( 一般的線上課程會告訴你, 這是out of scope, 請先修XX課程)..老師教授課程也是以解決問題為導向而不是照本宣科, 所以覺得很實用.第一次覺得上課可以這麼享受. 真的很謝謝老師... by angela"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"第一次報名 Python 的課程，由於是線上課程，所以省去了交通往返的時間，也降低了一點學習的壓力。由於課程的時間不長，所以老師不會從最基礎的一步一步上，而是採用最有效率的方式 - 由實際案例中學習。這樣的方式加快了學習的速度，同時也帶到了基本的語法，而且也很快就得到了成就感。<br/>
+                    每次的課程，老師都會錄影，當有不了解或沒跟上的地方，也可以隨時回看，加深印象。老師也很樂意對於同學們提出的問題進行解答，同時也讓其他同學一起學習。報名這個課程真的是收獲良多，實在是太超值了。"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"雖然沒辦法實際参與即時線上課程，但看錄影帶慢慢學習，老師講解很清楚，收獲滿滿，因本身就是程式設計專業人員，也有網頁程式設計經驗，雖然現在退休了在家帶孫子，不想讓腦袋退化，學些新知識，覺得讓自己生命充實。謝謝老師。"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"老師非常用心講解概念，搭配很多實例，做實務上的練習。本門課程非常實用，如果進一步步深入應用，會有非常大的收獲。謝謝賭神老師的傾囊相授！"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"一開始雖然聽說Python很好用，也興沖沖地買了一堆書和看了一些文章，但真的上過賭神老師的課才真的有學到的感覺，包含影片製作 step by step的解說，按部就班的引導，以及與同學的互動 教學的認真，還有課後補強與重溫的機會等等，都讓我深刻體會，真的是CP值超高的課程，推薦大家趕快來上下一梯。"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"由於此次Python 的課程是線上課程，因此省去舟車勞頓的時間；也因課程的時間較短，Victor老師採用較有效率的方式 – 藉實際案例中解說，此方式可加速學習的理解，再者，有了基本的語法，可快速得到學習效果。最令人佩服的是Victor老師會針對於同學們提出的問題進行錄影解答；總之，這次課程真的是收獲良多。"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"對python的使用，程式更清楚，特別是爬蟲，對抓取公開資訊有很大的助益，即使像我是電腦白痴也可以很容易了解，但希望老師可以再開進階課程，可以讓我們更了解如何運用，其實工作很忙，實在沒有太多時間練習，但相信跟著老師多作幾次，也應該可以變得很熟悉，很容易入手，感謝老師！"</p>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="clearfix bg-white m-3 p-3 shadow-lg rounded-3">
+                <img src="img/man.png" class="col-2 float-start m-2 rounded-circle border border-5" alt="Annonymous">
+              
+                <p>"有志學習Python的夥伴們，經由Roger老師經驗介紹，加上賭神老師用心教學，這門學問值得您來上課，基礎功扎實。課前有練習題與軟體環境安裝和測試，確保整體軟體操作完整，並對基本語法運作有初步認識。課程有介紹電腦基本結構，程式運作流程，深入淺出，介紹多方位爬蟲相關實作案例，又有影片可重複練習，群組發問解答，真是學到賺到很多應用，且學費只3600元，天涯海角有網路環境皆可雲端上課，經濟又實惠。施育仁推薦。"</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-info bg-gradient text-dark py-5" id="FAQ">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-dark">常見問題</h2>
+            <hr class="border-top border-dark w-25 mx-auto my-4">
+          </div>
+        </div>
+        <div class="row">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Q: 請問適合你們的課程的對象是誰？
+                    </button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A:<br/>
+                        我們的課程主要是針對(但不限於)底下的朋友設計的：<br/>
+                        <i class="fa fa-check"></i> 想要迅速具備程式技能的學生。<br/>
+                        <i class="fa fa-check"></i> 想要了解程式技術的管理者。<br/>
+                        <i class="fa fa-check"></i> 想要迅速作出產品雛形的朋友。<br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Q: 你們跟別的課程的差別？
+                    </button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A:<br/>
+                        大部分的程式課程是針對軟體工程師規劃的，比較講究鉅細靡遺。<br/>
+                        我們的課程比較講究大方向的理解，迅速動手實作，以及如何自己找解答。<br/>
+                        簡單的說，我們的課程跟別人的課程是互補的，蠻建議大家先上了我們的課程再去上別人的課程。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Q: 我們會從課程中學到什麼?
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A: <br/>
+                        您會從我們的課程中學到如何運用資訊科技強化自己原本的能力。<br/>
+                        如果您是會計背景，上完課後您會更知道怎麼使用電腦來處理會計資訊；如果您是金融分析背景，上完課之後您會更知道怎麼使用電腦來自動化分析金融資訊；如果您了解機器學習的理論，上完課之後您會更知道怎麼寫程式來應用這些理論...<br/>
+                        我們希望的是您在上完課之後，能讓自己在原本的領域上具備同一個領域的競爭者沒有的資訊技術能力。<br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          Q: 你們怎麼讓人家"迅速"學會寫程式?
+                      </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          A: <br/>
+                          我們會挑選一門技術中最簡單、最常用的那20%的東西先教，因為它們通常有80%的重要性或可以解決80%的問題。接著，我們會讓學生不斷的練習這20%的東西，直到可以活用它們為止。另外80%較難較不常用的東西，我們會告訴學生可以在哪裡找到說明，而不用特別去記憶它們。<br/>
+                          就像是學習口說語言一樣，我們教的內容偏向會話應用；而別人的課程有可能偏向教GRE單字。<br/>
+                      </div>
+                    </div>
+                  </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                          Q: 為什麼你們的影片有觀看期限?
+                      </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          A: <br/>
+                          因為軟體技術更新的速度非常快，常常一段時間之後，影片就需要更新了！我們會不斷更新我們的內容，過期的技術會讓它下架，或開放免費觀看！<br/>
+                          另外，如果沒有設定期限，學生通常會拖著以後再看！<br/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+         
+      </div>
+    </section>
+
+    <section class="bg-white py-5" id="contact">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="text-dark">聯絡我們</h2>
+            <hr class="border-top border-dark w-25 mx-auto my-4">
+            <p class="mb-5">如果您對我們的服務有興趣，想要進一步了解我們，請關注我們的粉絲頁，瀏覽我們的線上課程，或透過 EMail 聯絡我們！</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center my-3">
+            <a class="text-danger text-decoration-none" href="https://www.facebook.com/vcdemy/">
+                <i class="fa fa-thumbs-o-up fa-4x mb-3 sr-contact"></i>
+                <h4 class="mb-3">唯客學院粉絲頁</h4>
+                <p class="text-muted mb-0">點擊關注唯客學院最新狀況</p>
+            </a>
+          </div>
+          <div class="col-lg-4 ml-auto text-center my-3">
+            <a class="text-danger text-decoration-none" href="https://khpy.teachable.com">
+                <i class="fa fa-globe fa-4x mb-3 sr-contact"></i>
+                <h4 class="mb-3">唯客學院線上課程</h4>
+                <p class="text-muted mb-0">點擊前往唯客學院線上課程</p>
+            </a>
+          </div>
+          <div class="col-lg-4 mr-auto text-center my-3">
+            <a class="text-danger text-decoration-none" href="mailto:vcdemy@gmail.com">
+                <i class="fa fa-envelope-o fa-4x mb-3 sr-contact"></i>
+                <h4 class="mb-3">vcdemy@gmail.com</h4>
+                <p class="text-muted mb-0">歡迎隨時與我們保持聯繫</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-light py-4">
+      <div class="container">
+        <div class="small text-center"><a class="text-muted text-decoration-none" href="https://victorgau.com">Copyright © 2022 - 唯客學院</a></div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
 </html>
