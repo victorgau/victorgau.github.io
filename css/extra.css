@@ -1,0 +1,4 @@
+/* 修改 mkdocs-material 的 Grid Card 背景顏色 */
+.grid.cards li {
+    background-color: #ecfbf1; /* 你想要的背景顏色 */
+}
